@@ -468,7 +468,7 @@ main .cultura-cred:focus-visible {
   background: var(--hero-overlay);
 }
 
-/* Vídeo em tela cheia (People Work Home C, mesmo arquivo mp4 do mirror framer) */
+/* Vídeo em tela cheia da hero (REATRANS) */
 .hero__media {
   position: absolute;
   inset: 0;
@@ -1157,14 +1157,7 @@ html.theme-high-contrast .hero__video {
   }
 
   .hero__media {
-    background-image: url("../assets/hero-peoplework-poster.webp");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  html.theme-high-contrast .hero__media {
-    background-image: none;
+    background-color: #8ec5e8;
   }
 }
 
