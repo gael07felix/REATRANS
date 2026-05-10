@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cartilha digital, combate à LGBTQIAPN+fobia no ambiente educacional</title>
+    <meta
+      name="description"
+      content="Material educativo sobre diversidade, direitos e combate à LGBTQIAPN+fobia no ambiente escolar, com foco em acessibilidade."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Caslon+Text:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+    <button type="button" class="skip-link skip-link--2 skip-link--btn" data-a11y-dialog-open>
+      Abrir opções de acessibilidade
+    </button>
+
+    <!-- Ferramentas anunciadas para leitores de tela quando algo mudar -->
+    <div id="sr-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="hero__header-cluster">
+      <header class="hero__shell" role="banner">
+        <div class="hero__nav-pill">
+          <p class="hero__brand">
+            <span class="sr-only">REATRANS</span>
+            <img
+              class="hero__logo-img hero__logo-img--light"
+              src="assets/Logo%20-%20REATRANS.webp"
+              width="160"
+              height="40"
+              alt=""
+              decoding="async"
+              aria-hidden="true"
+            />
+            <img
+              class="hero__logo-img hero__logo-img--dark"
+              src="assets/Logo%20-%20REATRANS%20-%20Fundo%20escuro.webp"
+              width="160"
+              height="40"
+              alt=""
+              decoding="async"
+              aria-hidden="true"
+            />
+          </p>
+          <nav class="hero__menu" id="hero-main-menu" aria-label="Secções principais da cartilha">
+            <div class="hero__menu-backdrop" aria-hidden="true"></div>
+            <div class="hero__menu-links">
+              <a href="#conceitos">LGBTQIAPN+</a>
+              <a href="#identidade-e-orientacao">Identidade</a>
+              <a href="#violencia">Violência</a>
+              <a href="#direitos">Direitos</a>
+              <a href="#historico">Linha do tempo</a>
+              <a href="#reatrans-trusted">Sobre</a>
+              <a href="#cultura">Referências</a>
+            </div>
+          </nav>
+          <a class="hero__pill-cta" href="#ifsp-apoio-violencia">Precisa de apoio ou denúncia no IFSP?</a>
+          <button
+            type="button"
+            class="hero__menu-toggle"
+            id="hero-menu-toggle"
+            aria-expanded="false"
+            aria-controls="hero-main-menu"
+            aria-label="Abrir menu de navegação"
+          >
+            <span class="hero__menu-toggle-box" aria-hidden="true">
+              <span class="hero__menu-toggle-bar"></span>
+              <span class="hero__menu-toggle-bar"></span>
+              <span class="hero__menu-toggle-bar"></span>
+            </span>
+          </button>
+        </div>
+      </header>
+      <div class="hero__header-tools" role="group" aria-label="Tema e acessibilidade">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-pressed="false"
+          aria-label="Ativar modo escuro"
+          title="Modo escuro"
+        >
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M21 14.5A8.5 8.5 0 0 1 9.5 3 8.5 8.5 0 1 0 21 14.5Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+            <path
+              d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="a11y-dialog-trigger"
+          id="a11y-dialog-open"
+          data-a11y-dialog-open
+          aria-haspopup="dialog"
+          aria-controls="acessibilidade"
+          aria-expanded="false"
+          aria-label="Acessibilidade: abrir opções e apoio à leitura"
+          title="Acessibilidade"
+        >
+          <svg class="a11y-dialog-trigger__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="5.5" r="2.25" stroke="currentColor" stroke-width="1.75" />
+            <path
+              d="M7 10.5h10M9 10.5v9.5M15 10.5v9.5M5.5 20h13"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <main id="conteudo-principal" tabindex="-1">
+      <!-- Hero alinhada ao template People Work: céu full-bleed, nav em pílula, conteúdo centralizado -->
+      <section class="hero" aria-labelledby="titulo-site" tabindex="0">
+        <!-- Mesmo vídeo da hero People Work Home C (framer …/w6ZHv5d3HsEKoVVzVXdu1LujKMo.mp4 + poster fyYfks7…) -->
+        <div class="hero__media" aria-hidden="true">
+          <video
+            class="hero__video"
+            src="assets/hero-peoplework.mp4"
+            poster="assets/hero-peoplework-poster.webp"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+
+        <div class="hero__inner">
+          <p class="hero__meta">IFSP Campus Cubatão · REATRANS, Rede Antitransfobia</p>
+          <h1 id="titulo-site" class="hero__title">
+            A LGBTQIAPN+fobia no ambiente escolar <em class="hero__emphasis">raramente</em> é simples
+          </h1>
+          <p class="hero__lead">
+            Informação clara sobre diversidade, direitos e caminhos institucionais, para estudantes, educadoras, educadores e
+            equipes escolares.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--hero-main" href="#ifsp-apoio-violencia">
+              <span class="btn__label">Canais e providências</span>
+              <span class="btn__arrow" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="rainbow-strip" aria-hidden="true"></div>
+
+      <section id="conceitos" class="section section--conceitos" aria-labelledby="conceitos-heading" tabindex="0">
+        <div class="conceitos-container">
+        <div class="conceitos-split">
+          <div class="conceitos-split__visual">
+            <figure class="conceitos-split__figure">
+              <img
+                id="conceitos-photo"
+                class="conceitos-split__img"
+                src="https://picsum.photos/seed/reatrans-les/900/1100"
+                alt="Ilustração decorativa relacionada ao termo: Lésbicas."
+                width="900"
+                height="1100"
+                decoding="async"
+              />
+              <div class="conceitos-split__overlay" aria-hidden="true"></div>
+              <figcaption id="conceitos-caption" class="conceitos-split__caption">
+                Lésbicas são mulheres (incluindo trans) com atração afetiva e/ou sexual por outras mulheres. A visibilidade
+                lésbica combate o apagamento e a hipersexualização sofridos por muitas mulheres no ambiente escolar.
+              </figcaption>
+            </figure>
+            <p id="conceitos-live" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+          </div>
+          <div class="conceitos-split__panel">
+            <p class="conceitos-split__tag">LGBTQIAPN+</p>
+            <h2 id="conceitos-heading" class="conceitos-split__title">Conceitos e siglas</h2>
+            <p id="conceitos-sub" class="conceitos-split__sub">
+              A sigla reúne identidades e orientações diversas, algumas ligadas à identidade de gênero e outras à
+              orientação afetivo-sexual. Em telas grandes, passe o mouse ou use as setas no teclado para explorar cada
+              item. No celular, toque no termo para ver a imagem e a descrição logo abaixo dele.
+            </p>
+            <div
+              class="conceitos-split__list"
+              role="radiogroup"
+              aria-labelledby="conceitos-heading"
+              aria-describedby="conceitos-sub"
+              data-conceitos-radiogroup
+            >
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger is-active" role="radio" aria-checked="true">
+                  Lésbicas
+                </button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">Gays</button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">Bissexuais</button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">
+                  Transgêneros / Travestis
+                </button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">Queer</button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">Intersexo</button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">Assexual</button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">Pansexual</button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">Não binário</button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+              <div class="conceitos-split__choice">
+                <button type="button" class="conceitos-split__trigger" role="radio" aria-checked="false">
+                  Demais orientações sexuais e identidades de gênero
+                </button>
+                <div class="conceitos-split__choice-slot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="identidade-e-orientacao" class="section section--identity-cards" aria-labelledby="identidade-heading" tabindex="0">
+        <header class="identity-cards__intro">
+          <p class="identity-cards__tag">Identidade e orientação</p>
+          <h2 id="identidade-heading" class="identity-cards__title">
+            Identidade de gênero, sexo biológico, expressão <em>e orientação</em>
+          </h2>
+          <p class="identity-cards__lead">
+            Estes temas são diferentes entre si. Em telas grandes, passe o mouse ou use o teclado nos cartões para expandir e ler o texto completo.
+          </p>
+        </header>
+
+        <div class="identity-cards">
+          <article class="identity-cards__card" tabindex="0" aria-labelledby="id-card-genero">
+            <img
+              class="identity-cards__bg"
+              src="https://picsum.photos/seed/reatrans-identidade-genero/960/1080"
+              alt=""
+              width="960"
+              height="1080"
+              decoding="async"
+            />
+            <div class="identity-cards__overlay" aria-hidden="true"></div>
+            <div class="identity-cards__inner">
+              <h3 id="id-card-genero" class="identity-cards__card-title">Identidade de gênero e sexo biológico</h3>
+              <p class="identity-cards__desc">
+                Identidade de gênero pode ser descrita, em um eixo simplificado, entre cisgênero e transgênero. Sexo biológico
+                (categorias usadas em documentos e medicina, com variações) costuma ser falado como feminino, intersexo e
+                masculino, sendo intersexo uma das variações naturais possíveis.
+              </p>
+            </div>
+            <span class="identity-cards__fab" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </article>
+
+          <article class="identity-cards__card" tabindex="0" aria-labelledby="id-card-expressao">
+            <img
+              class="identity-cards__bg"
+              src="https://picsum.photos/seed/reatrans-expressao-orient/960/1080"
+              alt=""
+              width="960"
+              height="1080"
+              decoding="async"
+            />
+            <div class="identity-cards__overlay" aria-hidden="true"></div>
+            <div class="identity-cards__inner">
+              <h3 id="id-card-expressao" class="identity-cards__card-title">Expressão de gênero e orientação afetivo-sexual</h3>
+              <p class="identity-cards__desc">
+                Expressão de gênero diz respeito a como uma pessoa se apresenta (por exemplo, mais associada a elementos
+                femininos, andróginos ou masculinos, entre outras possibilidades). Orientação afetivo-sexual refere-se à
+                atração (por exemplo, heterossexual, bissexual ou homossexual, entre outras).
+              </p>
+            </div>
+            <span class="identity-cards__fab" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </article>
+        </div>
+      </section>
+
+      <section id="violencia" class="section section--violencia-split" aria-labelledby="violencia-heading" tabindex="0">
+        <div class="violencia-split">
+          <div class="violencia-split__content">
+            <header class="violencia-split__intro">
+              <p class="violencia-split__tag">Violência e transfobia</p>
+              <h2 id="violencia-heading" class="violencia-split__title">Violência <em>(transfobia)</em></h2>
+            </header>
+            <p>
+              Dados e exemplos citados na cartilha mostram gravidade e frequência:
+              <strong>77% dos jovens transgênero</strong> teriam sofrido transfobia no ambiente escolar (segundo estudo referido na cartilha);
+              o Brasil registrou <strong>140 assassinatos de pessoas trans em 2021</strong>.
+            </p>
+            <p>Casos ilustrativos mencionados incluem:</p>
+            <ul>
+              <li>Mulher cis agredida após ser confundida com uma pessoa trans;</li>
+              <li>Aluna trans agredida em Mogi das Cruzes, relutante em voltar à escola;</li>
+              <li>Jovem trans sofrendo transfobia em colégio tradicional no Pará.</li>
+            </ul>
+
+            <section aria-labelledby="violencia-sala-heading" tabindex="0">
+              <h3 id="violencia-sala-heading" class="violencia-split__sala-heading">
+                Como a violência pode aparecer em sala de aula?
+              </h3>
+              <ul>
+                <li>Exclusão (dificuldade em participar de grupos e trabalhos);</li>
+                <li>Desrespeito ao nome social e aos pronomes;</li>
+                <li>“Piadas” e “brincadeiras” LGBTfóbicas;</li>
+                <li>Cyberbullying;</li>
+                <li>
+                  Falas invasivas ou reducionistas, como:
+                  <ul>
+                    <li>“Você nem parece trans”;</li>
+                    <li>“Você é trans, mas é linda”;</li>
+                    <li>“Você já operou? Vai operar?”;</li>
+                    <li>“Qual seu nome de batismo?”</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="violencia-split__visual">
+            <figure class="violencia-split__figure">
+              <img
+                class="violencia-split__img"
+                src="https://picsum.photos/seed/reatrans-violencia-comunidade/820/1024"
+                alt=""
+                width="820"
+                height="1024"
+                decoding="async"
+              />
+              <figcaption class="sr-only">
+                Imagem ilustrativa de apoio ao texto sobre violência e transfobia contra a comunidade LGBTQIAPN+.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="direitos" class="section section--direitos-cards" aria-labelledby="direitos-heading" tabindex="0">
+        <div class="direitos-cards">
+          <svg class="direitos-cards__defs" width="0" height="0" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient
+                id="direitos-icon-rainbow"
+                gradientUnits="userSpaceOnUse"
+                x1="0"
+                y1="24"
+                x2="24"
+                y2="0"
+              >
+                <stop offset="0%" stop-color="#e40303" />
+                <stop offset="18%" stop-color="#ff8c00" />
+                <stop offset="34%" stop-color="#ffed00" />
+                <stop offset="50%" stop-color="#008026" />
+                <stop offset="68%" stop-color="#004cff" />
+                <stop offset="100%" stop-color="#732982" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <header class="direitos-cards__intro">
+            <p class="direitos-cards__tag">Cartilha · garantias</p>
+            <h2 id="direitos-heading" class="direitos-cards__title">Direitos</h2>
+            <p class="direitos-cards__lead">
+              Direitos essenciais no ambiente educacional, reconhecidos na cartilha e alinhados ao compromisso com a igualdade e o respeito à diversidade.
+            </p>
+          </header>
+
+          <div class="direitos-cards__grid">
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="9" r="3.25" stroke="currentColor" stroke-width="1.75" />
+                  <path
+                    d="M6.5 20v-.5a4 4 0 0 1 4-4h3a4 4 0 0 1 4 4v.5"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Nome social</h3>
+                <p class="direitos-cards__desc">
+                  Uso do nome de referência em chamadas, registros e comunicações, sem expor nome civil ou impor identidades que não são as da pessoa.
+                </p>
+              </div>
+            </article>
+
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 21V10l8-5 8 5v11" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 10h6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Banheiro e identidade de gênero</h3>
+                <p class="direitos-cards__desc">
+                  Uso de sanitários compatível com a identidade de gênero, em segurança e sem constrangimento ou fiscalização.
+                </p>
+              </div>
+            </article>
+
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" />
+                  <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Igualdade</h3>
+                <p class="direitos-cards__desc">
+                  Tratamento equânime em oportunidades, avaliações, atividades e convivência, sem discriminação.
+                </p>
+              </div>
+            </article>
+
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 20.2l7.7-7.7 1.1-1.1a5.5 5.5 0 0 0 0-7.8Z"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Respeito à identidade</h3>
+                <p class="direitos-cards__desc">
+                  Reconhecer e validar a identidade de gênero e as orientações sem apagamento, patologização ou zombaria.
+                </p>
+              </div>
+            </article>
+
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.75" />
+                  <path d="M8 8h8M8 12h5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                  <path d="M9 18h6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Reconhecimento da identidade</h3>
+                <p class="direitos-cards__desc">
+                  Acolhimento institucional com processos claros, sem exigir provas invasivas para existir no ambiente escolar.
+                </p>
+              </div>
+            </article>
+
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="6" r="2.5" stroke="currentColor" stroke-width="1.75" />
+                  <circle cx="6" cy="17" r="2.5" stroke="currentColor" stroke-width="1.75" />
+                  <circle cx="18" cy="17" r="2.5" stroke="currentColor" stroke-width="1.75" />
+                  <path d="M12 8.5 7.5 15M12 8.5 16.5 15M8.5 17h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Rede de apoio</h3>
+                <p class="direitos-cards__desc">
+                  Conexão com serviços, coletivos e profissionais que possam oferecer acolhimento e continuidade de cuidado.
+                </p>
+              </div>
+            </article>
+
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21 12a8 8 0 0 1-8 8H3l2.3-2.3A8 8 0 1 1 21 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M8 12h.02M12 12h.02M16 12h.02" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Canais de comunicação</h3>
+                <p class="direitos-cards__desc">
+                  Rotas formais para ouvidoria, escuta e encaminhamento, incluindo denúncia quando houver violação de direitos.
+                </p>
+              </div>
+            </article>
+
+            <article class="direitos-cards__card">
+              <div class="direitos-cards__icon-wrap" aria-hidden="true">
+                <svg class="direitos-cards__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.75" />
+                  <path d="M3 12h18M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18" stroke="currentColor" stroke-width="1.75" />
+                  <path d="M12 16v-4l-2-2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="direitos-cards__body">
+                <h3 class="direitos-cards__name">Acesso à cidadania</h3>
+                <p class="direitos-cards__desc">
+                  Acesso igualitário a todos os direitos de cidadania, estudo, participação, segurança e dignidade, sem LGBTfobia.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="historico" class="section section--historico-process" aria-labelledby="historico-heading" data-historico-process tabindex="0">
+        <div class="historico-process">
+          <header class="historico-process__intro">
+            <p class="historico-process__tag">Linha do tempo</p>
+            <h2 id="historico-heading" class="historico-process__title">Marcos históricos do <em>movimento LGBTQIAPN+</em></h2>
+            <p class="historico-process__lead">
+              Um panorama em marcos internacionais e nacionais citados na cartilha.
+            </p>
+          </header>
+
+          <div class="historico-process__layout">
+            <nav
+              class="historico-process__nav"
+              aria-label="Índice dos marcos históricos: ao rolar a página, o item ativo acompanha a leitura; toque ou clique para ir direto a um marco."
+            >
+              <div class="historico-process__nav-inner">
+                <p id="historico-tab-kbd-hint" class="sr-only">
+                  Índice de marcos. Use setas para cima ou para baixo para escolher um ano; Enter ou espaço move a leitura até o texto desse marco na página.
+                </p>
+                <ul class="historico-process__tabs" aria-describedby="historico-tab-kbd-hint">
+                  <li>
+                    <button
+                      type="button"
+                      class="historico-process__tab is-active"
+                      data-historico-tab="historico-panel-1969"
+                      aria-controls="historico-panel-1969"
+                      aria-current="true"
+                      id="tab-historico-1969"
+                      tabindex="0"
+                    >
+                      <span class="historico-process__tab-label">1969</span>
+                      <span class="historico-process__tab-hint">Stonewall</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-1970" aria-controls="historico-panel-1970" id="tab-historico-1970" tabindex="-1">
+                      <span class="historico-process__tab-label">1970</span>
+                      <span class="historico-process__tab-hint">Paradas</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-1978" aria-controls="historico-panel-1978" id="tab-historico-1978" tabindex="-1">
+                      <span class="historico-process__tab-label">1978</span>
+                      <span class="historico-process__tab-hint">Bandeira &amp; SOMOS</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-1990" aria-controls="historico-panel-1990" id="tab-historico-1990" tabindex="-1">
+                      <span class="historico-process__tab-label">1990</span>
+                      <span class="historico-process__tab-hint">OMS &amp; década</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-1997" aria-controls="historico-panel-1997" id="tab-historico-1997" tabindex="-1">
+                      <span class="historico-process__tab-label">1997</span>
+                      <span class="historico-process__tab-hint">Parada SP</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-2004" aria-controls="historico-panel-2004" id="tab-historico-2004" tabindex="-1">
+                      <span class="historico-process__tab-label">2004</span>
+                      <span class="historico-process__tab-hint">BSH</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-2011" aria-controls="historico-panel-2011" id="tab-historico-2011" tabindex="-1">
+                      <span class="historico-process__tab-label">2011</span>
+                      <span class="historico-process__tab-hint">União estável</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-2018" aria-controls="historico-panel-2018" id="tab-historico-2018" tabindex="-1">
+                      <span class="historico-process__tab-label">2018</span>
+                      <span class="historico-process__tab-hint">Nome social</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="historico-process__tab" data-historico-tab="historico-panel-2019" aria-controls="historico-panel-2019" id="tab-historico-2019" tabindex="-1">
+                      <span class="historico-process__tab-label">2019</span>
+                      <span class="historico-process__tab-hint">STF</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="historico-process__panels">
+              <article id="historico-panel-1969" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-1969-stonewall/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Internacional</p>
+                  <h3 class="historico-process__panel-title">1969, Rebelião de Stonewall</h3>
+                  <p class="historico-process__text">
+                    Protestos contra a repressão no bar Stonewall Inn: marco inicial do movimento LGBTQIAPN+ e referência mundial para lutas por dignidade e visibilidade.
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">Marco fundador da memória política do orgulho LGBTQIAPN+.</p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-1970" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-1970-paradas/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Internacional</p>
+                  <h3 class="historico-process__panel-title">1970, Primeiras Paradas do Orgulho</h3>
+                  <p class="historico-process__text">
+                    Primeiras Paradas do Orgulho em Nova York, Los Angeles e Chicago, ocupação do espaço público como afirmação coletiva.
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">Origem das marchas de visibilidade que se espalharam pelo mundo.</p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-1978" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-1978-unificado/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Internacional · Brasil</p>
+                  <h3 class="historico-process__panel-title">1978, Bandeira do arco-íris e Grupo SOMOS</h3>
+                  <p class="historico-process__text">
+                    <strong>Internacional.</strong> Criação da bandeira do arco-íris por Gilbert Baker, símbolo reconhecível de pluralidade e resistência.
+                  </p>
+                  <p class="historico-process__text">
+                    <strong>Brasil.</strong> Fundação do Grupo SOMOS (SP), primeiro grupo organizado de militância homossexual no Brasil.
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">
+                      Um ícone visual global e, no país, o surgimento de organização política pioneira da militância.
+                    </p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-1990" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-1990-unificado/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Internacional · Brasil</p>
+                  <h3 class="historico-process__panel-title">1990, OMS e movimentos na década</h3>
+                  <p class="historico-process__text">
+                    <strong>Internacional.</strong> A OMS retira a homossexualidade da lista de doenças. A data <strong>17 de maio</strong> passa a marcar o Dia Internacional de Combate à LGBTfobia.
+                  </p>
+                  <p class="historico-process__text">
+                    <strong>Brasil (anos 1990).</strong> Formação de coletivos de travestis e transexuais e surgimento da ANTRA, fortalecimento de agendas específicas e articulação nacional.
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">
+                      Despatologização internacional e, no país, visibilidade organizada de travestis e transexuais na década.
+                    </p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-1997" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-1997-parada/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Brasil</p>
+                  <h3 class="historico-process__panel-title">1997, Parada em São Paulo</h3>
+                  <p class="historico-process__text">
+                    Primeira Parada do Orgulho LGBT em São Paulo (Avenida Paulista).
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">Presença massiva no espaço urbano e rotina de mobilização anual.</p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-2004" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-2004-bsh/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Brasil</p>
+                  <h3 class="historico-process__panel-title">2004, Brasil sem Homofobia</h3>
+                  <p class="historico-process__text">
+                    Programa “Brasil sem Homofobia”, políticas públicas voltadas à promoção de direitos e enfrentamento da discriminação.
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">Marco de políticas federais de enfrentamento à LGBTfobia.</p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-2011" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-2011-uniao/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Brasil</p>
+                  <h3 class="historico-process__panel-title">2011, União estável homoafetiva</h3>
+                  <p class="historico-process__text">
+                    Reconhecimento da união estável homoafetiva pelo STF.
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">Efeito constitucional sobre famílias e vínculos afetivos.</p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-2018" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-2018-nome/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Brasil</p>
+                  <h3 class="historico-process__panel-title">2018, Nome social</h3>
+                  <p class="historico-process__text">
+                    Nome social garantido em documentos oficiais e escolas.
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">Reconhecimento administrativo e pedagógico da identidade.</p>
+                  </aside>
+                </div>
+              </article>
+
+              <article id="historico-panel-2019" class="historico-process__panel" data-historico-panel tabindex="0">
+                <div class="historico-process__media">
+                  <img
+                    src="https://picsum.photos/seed/reatrans-hist-2019-stf/960/720"
+                    alt=""
+                    width="960"
+                    height="720"
+                    decoding="async"
+                    class="historico-process__img"
+                  />
+                </div>
+                <div class="historico-process__card">
+                  <p class="historico-process__card-tag">Brasil</p>
+                  <h3 class="historico-process__panel-title">2019, Criminalização da LGBTfobia</h3>
+                  <p class="historico-process__text">
+                    Criminalização da LGBTfobia pelo STF (equiparada ao crime de racismo).
+                  </p>
+                  <aside class="historico-process__highlight" aria-label="Síntese na cartilha">
+                    <span class="historico-process__highlight-label">Na cartilha</span>
+                    <p class="historico-process__highlight-text">Proteção penal ampliada contra violências motivadas por ódio.</p>
+                  </aside>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ifsp-apoio-violencia" class="section section--ifsp-apoio" aria-labelledby="ifsp-apoio-heading" tabindex="0">
+        <div class="ifsp-apoio__inner">
+        <h2 id="ifsp-apoio-heading">Apoio, denúncia e violência no IFSP</h2>
+
+        <section id="violencia-o-que-fazer" aria-labelledby="oqfazer-heading" tabindex="0">
+          <h3 id="oqfazer-heading">O que fazer em caso de violência?</h3>
+          <ul>
+            <li>Não permitir e se posicionar;</li>
+            <li>Registrar via SUAP ou e-mail;</li>
+            <li>Trabalhar coletivamente;</li>
+            <li>Dialogar com a equipe;</li>
+            <li>Acolher o estudante.</li>
+          </ul>
+        </section>
+        </div>
+      </section>
+
+      <section id="ifsp-canais" class="section ifsp-canais" aria-labelledby="ifsp-heading" tabindex="0">
+        <div class="ifsp-apoio-banner">
+          <div class="ifsp-apoio-banner__layout">
+            <div class="ifsp-apoio-banner__body">
+              <h3 id="ifsp-heading" class="ifsp-apoio-banner__title">Canais de denúncia e apoio no IFSP</h3>
+              <p class="ifsp-apoio-banner__lede">
+                Quando direitos forem violados na escola ou universidade, há canal oficial: <strong>Resolução Normativa IFSP nº 26/2024</strong> (artigos 14 a 19).
+              </p>
+
+              <div class="ifsp-apoio-banner__block" aria-labelledby="providencias-heading">
+                <h4 id="providencias-heading" class="ifsp-apoio-banner__subheading">Providências no campus</h4>
+                <ol class="ifsp-apoio-banner__list ifsp-apoio-banner__list--numbered">
+                  <li>Comunicar um agente público, que deverá abrir um processo e encaminhar à Coordenadoria Sociopedagógica (CSP).</li>
+                  <li>O caso pode envolver a Diretoria Adjunta Educacional (DAE) ou a Direção Geral (DRG).</li>
+                  <li>Garantir sigilo das informações.</li>
+                  <li>
+                    Objetivo: acolher, compreender o ocorrido e orientar pedagogicamente. Isso integra a <strong>escuta inicial</strong> (quando a vítima relata) e a <strong>escuta ativa</strong> (quando a situação é identificada por servidores).
+                  </li>
+                </ol>
+              </div>
+
+              <p class="ifsp-apoio-banner__cta-wrap">
+                <a
+                  class="ifsp-apoio-banner__cta"
+                  href="https://www.ifsp.edu.br/images/2024/05_maio/Resol_Norma_26_2024_Institui_a_Politica_de_Prevencao_e_Enfrentamento_da_Violencia_envolvendo_estudantes_no_ambito_do_IFSP_2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Política de prevenção e enfrentamento da violência: Resolução Normativa IFSP nº 26/2024, documento PDF. Abre em nova aba."
+                  ><span class="ifsp-apoio-banner__cta-label ifsp-apoio-banner__cta-label--full" aria-hidden="true">Política de prevenção e enfrentamento da violência, RN 26/2024 (PDF)</span><span class="ifsp-apoio-banner__cta-label ifsp-apoio-banner__cta-label--short" aria-hidden="true">Política de prevenção da violência, PDF</span></a>
+              </p>
+            </div>
+            <figure class="ifsp-apoio-banner__qr">
+              <img
+                src="assets/ifsp-servidores-qr.png"
+                alt="QR Code com orientações e canais para servidores em situações de violência no IFSP"
+                width="360"
+                height="360"
+                decoding="async"
+                class="ifsp-apoio-banner__qr-img"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="servidores" class="section ifsp-servidores" aria-labelledby="servidores-heading" tabindex="0">
+        <div class="ifsp-apoio-banner">
+          <div class="ifsp-apoio-banner__layout">
+            <div class="ifsp-apoio-banner__body">
+              <h3 id="servidores-heading" class="ifsp-apoio-banner__title">Orientação aos servidores em situações de violência</h3>
+              <p class="ifsp-apoio-banner__text">
+                Em caso de risco iminente ou urgência, acionar autoridades competentes:
+              </p>
+              <ul class="ifsp-apoio-banner__list ifsp-apoio-banner__list--bullets">
+                <li>Polícia Militar;</li>
+                <li>SAMU.</li>
+              </ul>
+              <p class="ifsp-apoio-banner__text">
+                Comunicar imediatamente à <strong>CAE</strong>, que acionará a Direção Geral (DRG) e a DAE.
+              </p>
+
+              <p class="ifsp-apoio-banner__cta-wrap">
+                <a
+                  class="ifsp-apoio-banner__cta"
+                  href="https://www.ifsp.edu.br/images/2024/05_maio/Resol_Norma_26_2024_Institui_a_Politica_de_Prevencao_e_Enfrentamento_da_Violencia_envolvendo_estudantes_no_ambito_do_IFSP_2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Política de prevenção e enfrentamento da violência: Resolução Normativa IFSP nº 26/2024, documento PDF. Abre em nova aba."
+                  ><span class="ifsp-apoio-banner__cta-label ifsp-apoio-banner__cta-label--full" aria-hidden="true">Política de prevenção e enfrentamento da violência, RN 26/2024 (PDF)</span><span class="ifsp-apoio-banner__cta-label ifsp-apoio-banner__cta-label--short" aria-hidden="true">Política de prevenção da violência, PDF</span></a>
+              </p>
+            </div>
+            <figure class="ifsp-apoio-banner__qr">
+              <img
+                src="assets/ifsp-servidores-qr.png"
+                alt="QR Code com orientações e canais para servidores em situações de violência no IFSP"
+                width="360"
+                height="360"
+                decoding="async"
+                class="ifsp-apoio-banner__qr-img"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vídeo só no hero; rodapé do hero com fade (~30%) para #0c0c0e, segunda parte só fundo escuro, sem vídeo -->
+      <section id="reatrans-trusted" class="section section--reatrans-cred" aria-labelledby="reatrans-trusted-heading" tabindex="0">
+        <header class="reatrans-cred__hero">
+          <div class="reatrans-cred__hero-media" aria-hidden="true">
+            <video
+              class="reatrans-cred__video"
+              src="assets/Video%20Bandeira%20LGBTQIAPN%2B.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+          </div>
+          <div class="reatrans-cred__hero-scrim" aria-hidden="true"></div>
+          <div class="reatrans-cred__hero-content">
+            <p class="reatrans-cred__tag">IFSP Campus Cubatão</p>
+            <h2 id="reatrans-trusted-heading" class="reatrans-cred__title">
+              Sobre o <em class="reatrans-cred__title-em">REATRANS</em>
+            </h2>
+            <p class="reatrans-cred__subtitle">
+              O REATRANS (Rede Antitransfobia) é um grupo criado em 2023 no IFSP Campus Cubatão. Objetivos: combater preconceito e
+              opressão; promover pesquisas e eventos; discutir questões LGBTQIAPN+. Os encontros tratam também acolhimento, inclusão
+              e fortalecimento de grupos socialmente excluídos.
+            </p>
+          </div>
+        </header>
+
+        <div class="cultura-cred" id="cultura" aria-labelledby="cultura-cred-heading" role="region" tabindex="0">
+          <div class="cultura-cred__intro">
+            <p class="cultura-cred__tag">Cartilha REATRANS</p>
+            <h3 id="cultura-cred-heading" class="cultura-cred__title">
+              Referências <em class="cultura-cred__title-em">culturais</em>
+            </h3>
+            <p class="cultura-cred__subtitle">
+              Artistas sugeridos no material para ampliar repertório em sala, visibilidade LGBTQIA+ e sensação de pertencimento.
+            </p>
+          </div>
+          <div class="cultura-cred__carousel-wrap" role="region" aria-label="Artistas citados na cartilha">
+            <div class="cultura-cred__rail" data-cultura-marquee role="list">
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-linn/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Linn da Quebrada."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Linn da Quebrada</p>
+                <p class="cultura-cred__line">Rapper, performer e ativista.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-jup/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Jup do Bairro."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Jup do Bairro</p>
+                <p class="cultura-cred__line">Rap e narrativas periféricas.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-gloria/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Gloria Groove."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Gloria Groove</p>
+                <p class="cultura-cred__line">Cantora, drag e artista visual.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-pabllo/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Pabllo Vittar."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Pabllo Vittar</p>
+                <p class="cultura-cred__line">Pop, performer e referência LGBTQIA+.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-ney/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Ney Matogrosso."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Ney Matogrosso</p>
+                <p class="cultura-cred__line">Intérprete e ícone da música brasileira.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-cazuza/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Cazuza."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Cazuza</p>
+                <p class="cultura-cred__line">Cantor e compositor, legado e verdade.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-bowie/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para David Bowie."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">David Bowie</p>
+                <p class="cultura-cred__line">Rock, arte e reinvenção.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-freddie/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Freddie Mercury."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Freddie Mercury</p>
+                <p class="cultura-cred__line">Voz e presença no rock mundial.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-demi/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Demi Lovato."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Demi Lovato</p>
+                <p class="cultura-cred__line">Cantora e artista pop.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-lilnasx/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Lil Nas X."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Lil Nas X</p>
+                <p class="cultura-cred__line">Hip hop, pop e visibilidade queer.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-cassia/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Cássia Eller."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Cássia Eller</p>
+                <p class="cultura-cred__line">Rock e interpretação brasileira.</p>
+              </div>
+            </article>
+            <article class="cultura-cred__card" role="listitem">
+              <img
+                class="cultura-cred__photo"
+                src="https://picsum.photos/seed/reatrans-art-daniela/640/800"
+                width="640"
+                height="800"
+                alt="Imagem ilustrativa para Daniela Mercury."
+                decoding="async"
+              />
+              <div class="cultura-cred__card-foot">
+                <p class="cultura-cred__name">Daniela Mercury</p>
+                <p class="cultura-cred__line">Axé, carnaval e direitos LGBTQIAPN+.</p>
+              </div>
+            </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="cultura-cred cultura-cred--filmes" id="cultura-filmes" aria-labelledby="filmes-heading" role="region" tabindex="0">
+          <div class="cultura-cred__intro">
+            <p class="cultura-cred__tag">Cartilha REATRANS</p>
+            <h3 id="filmes-heading" class="cultura-cred__title">
+              Filmes, <em class="cultura-cred__title-em">documentários e cultura</em>
+            </h3>
+            <p class="cultura-cred__subtitle">
+              Outras sugestões presentes na cartilha, para ampliar repertório em sala e em casa.
+            </p>
+          </div>
+          <div class="cultura-cred__carousel-wrap" role="region" aria-label="Filmes e documentários sugeridos na cartilha">
+            <div class="cultura-cred__rail" data-cultura-marquee role="list">
+              <article class="cultura-cred__card" role="listitem">
+                <img
+                  class="cultura-cred__photo"
+                  src="https://picsum.photos/seed/reatrans-film-paris/640/800"
+                  width="640"
+                  height="800"
+                  alt="Imagem ilustrativa para o documentário Paris is Burning."
+                  decoding="async"
+                />
+                <div class="cultura-cred__card-foot">
+                  <p class="cultura-cred__name">Documentário</p>
+                  <p class="cultura-cred__line"><cite>Paris is Burning</cite></p>
+                </div>
+              </article>
+              <article class="cultura-cred__card" role="listitem">
+                <img
+                  class="cultura-cred__photo"
+                  src="https://picsum.photos/seed/reatrans-film-madame/640/800"
+                  width="640"
+                  height="800"
+                  alt="Imagem ilustrativa para o filme Madame Satã."
+                  decoding="async"
+                />
+                <div class="cultura-cred__card-foot">
+                  <p class="cultura-cred__name">Cinema brasileiro</p>
+                  <p class="cultura-cred__line"><cite>Madame Satã</cite></p>
+                </div>
+              </article>
+              <article class="cultura-cred__card" role="listitem">
+                <img
+                  class="cultura-cred__photo"
+                  src="https://picsum.photos/seed/reatrans-film-divinas/640/800"
+                  width="640"
+                  height="800"
+                  alt="Imagem ilustrativa para o documentário Divinas Divas."
+                  decoding="async"
+                />
+                <div class="cultura-cred__card-foot">
+                  <p class="cultura-cred__name">Documentário</p>
+                  <p class="cultura-cred__line"><cite>Divinas Divas</cite></p>
+                </div>
+              </article>
+              <article class="cultura-cred__card" role="listitem">
+                <img
+                  class="cultura-cred__photo"
+                  src="https://picsum.photos/seed/reatrans-film-pray/640/800"
+                  width="640"
+                  height="800"
+                  alt="Imagem ilustrativa para o documentário Pray Away."
+                  decoding="async"
+                />
+                <div class="cultura-cred__card-foot">
+                  <p class="cultura-cred__name">Documentário</p>
+                  <p class="cultura-cred__line"><cite>Pray Away</cite></p>
+                </div>
+              </article>
+              <article class="cultura-cred__card" role="listitem">
+                <img
+                  class="cultura-cred__photo"
+                  src="https://picsum.photos/seed/reatrans-film-stonewall/640/800"
+                  width="640"
+                  height="800"
+                  alt="Imagem ilustrativa para o filme Stonewall."
+                  decoding="async"
+                />
+                <div class="cultura-cred__card-foot">
+                  <p class="cultura-cred__name">Drama</p>
+                  <p class="cultura-cred__line"><cite>Stonewall</cite></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="acessibilidade" class="a11y-dialog" aria-labelledby="a11y-heading">
+      <div class="a11y-dialog__inner">
+        <button type="button" class="a11y-dialog__close" aria-label="Fechar painel de acessibilidade">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h2 id="a11y-heading" class="a11y-dialog__title">Acessibilidade e apoio à leitura</h2>
+        <p class="a11y-panel__lead">
+          Ajuste o tamanho do texto conforme sua necessidade. As escolhas ficam salvas neste aparelho até você limpar os dados do
+          navegador.
+        </p>
+        <div class="a11y-toolbar" role="group" aria-labelledby="a11y-tools-label">
+          <p id="a11y-tools-label" class="a11y-toolbar__label">Ferramentas rápidas</p>
+          <div class="a11y-toolbar__buttons">
+            <button type="button" id="a11y-font-decrease" class="a11y-btn" aria-label="Diminuir tamanho do texto">
+              Texto menor
+            </button>
+            <button type="button" id="a11y-font-increase" class="a11y-btn" aria-label="Aumentar tamanho do texto">
+              Texto maior
+            </button>
+            <button type="button" id="a11y-reset" class="a11y-btn a11y-btn--ghost" aria-label="Restaurar tamanho do texto ao padrão">
+              Restaurar padrão
+            </button>
+          </div>
+        </div>
+        <div class="a11y-panel__columns">
+          <section class="a11y-block" aria-labelledby="a11y-nav-heading">
+            <h3 id="a11y-nav-heading">Navegação e tecnologias assistivas</h3>
+            <ul class="a11y-block__list">
+              <li>
+                <strong>Teclado:</strong> use <kbd>Tab</kbd> para ir de um link ou botão ao próximo; <kbd>Shift+Tab</kbd> para voltar;
+                <kbd>Enter</kbd> ou <kbd>Espaço</kbd> ativam botões. Na seção “Conceitos e siglas”, as <kbd>setas</kbd> mudam o termo
+                selecionado. <kbd>Esc</kbd> fecha este painel.
+              </li>
+              <li>
+                <strong>Leitor de tela:</strong> use o link “Ir para o conteúdo principal” no topo da página, o atalho “Abrir opções de
+                acessibilidade” e os botões de modo escuro e de acessibilidade no canto superior. Também pode saltar entre secções pelos
+                cabeçalhos de página. Ao mudar o tema ou as opções neste painel, um aviso curto pode ser lido em voz alta.
+              </li>
+              <li>
+                <strong>Surdez ou perda auditiva:</strong> não há áudio obrigatório; o material é texto e imagens. Vídeos de fundo não
+                transmitem informação por som.
+              </li>
+              <li>
+                <strong>Comunicação não oral ou dificuldade de fala:</strong> toda a navegação é por texto, teclado ou toque; não é
+                necessário microfone.
+              </li>
+              <li>
+                <strong>Deficiência intelectual, TEA, TDAH ou fadiga cognitiva:</strong> experimente “Texto maior” neste painel;
+                divida a leitura em partes menores, usando os <strong>cabeçalhos</strong> da página (títulos das secções) para pausar, orientar-se e retomar depois. Em caso de angústia com o tema, priorize a seção de apoio e denúncia no IFSP.
+              </li>
+            </ul>
+          </section>
+          <section class="a11y-block" aria-labelledby="a11y-limit-heading">
+            <h3 id="a11y-limit-heading">Limitações e melhorias futuras</h3>
+            <p class="a11y-block__text">
+              Este é um material educativo estático. Se algo não funcionar bem com o seu leitor de tela ou navegador, ou se precisar de
+              outro formato (por exemplo PDF acessível ou Libras), procure a equipe do <span lang="pt-BR">REATRANS</span> ou do campus.
+            </p>
+          </section>
+        </div>
+        <form method="dialog" class="a11y-dialog__actions">
+          <button type="submit" class="a11y-btn">Fechar</button>
+        </form>
+      </div>
+    </dialog>
+
+    <footer class="site-footer" role="contentinfo">
+      <p>
+        Conteúdo baseado na cartilha <span lang="pt-BR">“Cartilha de combate à LGBTQIAPN+fobia no ambiente educacional”</span>
+        (Grupo de Pesquisas REATRANS, IFSP Campus Cubatão). Material educativo, verifique sempre normas e contatos atualizados no site institucional.
+      </p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/conceitos-panel.js" defer></script>
+    <script src="js/historico-process.js" defer></script>
+  </body>
+</html>
