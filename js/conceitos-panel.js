@@ -7,52 +7,52 @@
 
   var items = [
     {
-      image: "https://picsum.photos/seed/reatrans-les/900/1100",
+      image: "https://fetamce.org.br/wp-content/uploads/2019/08/40235641_1941828462527528_7086849579185864704_n.jpg",
       text:
         "Lésbicas são mulheres (incluindo trans) com atração afetiva e/ou sexual por outras mulheres. A visibilidade lésbica combate o apagamento e a hipersexualização sofridos por muitas mulheres no ambiente escolar.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-gay/900/1100",
+      image: "https://media.istockphoto.com/id/1390068712/pt/foto/portrait-of-a-happy-gay-couple-having-fun-on-an-outdoor-date-playing-together-smiling-real.jpg?s=612x612&w=0&k=20&c=1DM1yrp-tK7N828lxTv1EWkL37IXm5jkZwoEEnU7Lqo=",
       text:
         "Gays são homens (cis ou trans) com atração afetiva e/ou sexual por outros homens. O termo também costuma ser usado de forma genérica no acrônimo, embora hoje se busque nomear com precisão outras identidades.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-bi/900/1100",
+      image: "https://s2-gshow.glbimg.com/IGHpf8GisWM3Vmv-DdbLACRyyxw=/0x0:1595x1077/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/7/4/Fy7skoSt6LxQ41VbGT2g/e85dcae5-ab3a-4de6-9260-b1b14ee6a2a8.png",
       text:
         "Bissexuais sentem atração por mais de um gênero. Bissexualidade é orientação válida; comentários que exigem “provas” ou reduzem a atração a estereótipos reforçam a bifobia.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-trans/900/1100",
+      image: "https://s2-oglobo.glbimg.com/urgBymn1mWwag_8s-LbasayJpXo=/0x0:8192x5464/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2025/Y/c/AA8dzqSkmiwNZ1Zy4RFw/110554720-washington-dc-march-31-a-transgender-rights-activist-holds-a-flag-during-the-trans-day-o.jpg",
       text:
         "Pessoas transgêneros têm identidade de gênero diferente do sexo designado ao nascer. Travestis constituem identidade e resistência específicas no Brasil; respeito ao nome social e à autodeterminação é obrigatório na escola.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-queer/900/1100",
+      image: "https://assets.teenvogue.com/photos/62a8b3c84fe8681b4e0392c6/16:9/w_2560%2Cc_limit/GettyImages-1164938789.jpg",
       text:
         "Queer pode funcionar como guarda-chuva político para quem rompe com normas rígidas de gênero e sexualidade; algumas pessoas usam como identidade. Uso respeitoso evita o termo como insulto.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-inter/900/1100",
+      image: "https://www.eusemfronteiras.com.br/wp-content/uploads/2023/08/Intersexo-810x456.png",
       text:
         "Pessoas intersexo apresentam variações de características sexuais que não se encaixam em definições exclusivamente masculinas ou femininas. Direitos incluem não ser forçada a intervenções sem consentimento.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-asex/900/1100",
+      image: "https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/04/25/bandeira-assexual-istock-urjlido3syn9.jpg",
       text:
         "No espectro assexual há diversidade de vivências de atração sexual e romântica (por exemplo, demissexualidade e aromanticidade). Ausência ou baixa de atração sexual não é “fase” nem defeito.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-pan/900/1100",
+      image: "https://www.rbsdirect.com.br/filestore/5/5/7/0/0/3/5_b7198e90c5ac211/5300755_09ad6882ed2dc2f.jpg?format=webp&w=1600&h=1600&a=c",
       text:
         "Pansexualidade descreve atração independente de gênero ou que considera a pessoa como um todo, sem que o gênero seja o eixo principal da atração, não é sinônimo de transfobia ou fetichismo.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-nb/900/1100",
+      image: "https://media.istockphoto.com/id/1322824551/pt/foto/person-waving-a-non-binary-pride-flag.jpg?s=612x612&w=0&k=20&c=h7OFP4926dP1vsxumxkFWjzHVgXhZzDybK-uaRuoP_0=",
       text:
         "Pessoas não binárias não se identificam apenas como homem ou mulher. Pronomes e nome social devem ser respeitados; ambiente escolar seguro evita pressionar alguém a “escolher um lado”.",
     },
     {
-      image: "https://picsum.photos/seed/reatrans-demais/900/1100",
+      image: "https://cdn.jornaldaparaiba.com.br/wp-content/uploads/2018/01/bandeira-lgbt-gay-transexual.jpg?xid=613713",
       text:
         "A sigla LGBTQIAPN+ é aberta a demais orientações sexuais e identidades de gênero. Linguagem e políticas escolares devem acolher essa pluralidade sem hierarquizar “letras principais” e secundárias.",
     },
