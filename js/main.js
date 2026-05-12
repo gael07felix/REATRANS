@@ -356,3 +356,78 @@
     rail.removeAttribute("role");
   });
 })();
+
+/**
+ * Carrossel de vídeos (estresse de minorias): setas alinham ao slide com scroll suave.
+ */
+(function () {
+  "use strict";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var viewport = document.getElementById("stress-videos-viewport");
+    var prevBtn = document.getElementById("stress-videos-prev");
+    var nextBtn = document.getElementById("stress-videos-next");
+    if (!viewport || !prevBtn || !nextBtn) return;
+
+    var track = viewport.querySelector(".stress-videos__track");
+    var slides = track ? track.querySelectorAll(".stress-videos__slide") : null;
+    if (!slides || !slides.length) return;
+
+    var reduceMotion =
+      typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function scrollBehavior() {
+      return reduceMotion ? "auto" : "smooth";
+    }
+
+    function nearestIndex() {
+      var mid = viewport.scrollLeft + viewport.clientWidth * 0.35;
+      var best = 0;
+      for (var j = 0; j < slides.length; j++) {
+        if (slides[j].offsetLeft <= mid) best = j;
+      }
+      return best;
+    }
+
+    function updateButtons() {
+      var maxScroll = Math.max(0, viewport.scrollWidth - viewport.clientWidth - 2);
+      var sl = viewport.scrollLeft;
+      prevBtn.disabled = sl <= 2;
+      nextBtn.disabled = sl >= maxScroll - 2;
+    }
+
+    function go(delta) {
+      var i = Math.max(0, Math.min(slides.length - 1, nearestIndex() + delta));
+      viewport.scrollTo({
+        left: slides[i].offsetLeft,
+        behavior: scrollBehavior(),
+      });
+    }
+
+    prevBtn.addEventListener("click", function () {
+      go(-1);
+    });
+    nextBtn.addEventListener("click", function () {
+      go(1);
+    });
+
+    viewport.addEventListener("scroll", function () {
+      window.requestAnimationFrame(updateButtons);
+    });
+
+    window.addEventListener("resize", updateButtons);
+    window.addEventListener("load", updateButtons);
+
+    viewport.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        go(-1);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        go(1);
+      }
+    });
+
+    updateButtons();
+  });
+})();

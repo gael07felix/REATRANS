@@ -442,7 +442,8 @@ html.theme-dark .a11y-dialog-trigger {
 /* Regiões principais com tabindex="0": o Tab pára no início de cada secção (conteúdo só texto deixa de ser “invisível” no foco). */
 main .hero:focus-visible,
 main .section:focus-visible,
-main .cultura-cred:focus-visible {
+main .cultura-cred:focus-visible,
+main .stress-videos:focus-visible {
   outline: 3px solid var(--color-focus);
   outline-offset: 0.35rem;
   border-radius: 0.2rem;
@@ -2571,6 +2572,633 @@ html.theme-high-contrast main > .section h2.violencia-split__title {
 html.theme-high-contrast .violencia-split__figure {
   border: 2px solid #ffffff;
   box-shadow: none;
+}
+
+/* --- Estresse de minorias (cartilha: saúde mental + citação + pilares + recursos) --- */
+main > .section.section--minority-stress {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: clamp(2.25rem, 5vw, 3.5rem) 1.25rem clamp(2.5rem, 6vw, 4rem);
+  background: linear-gradient(180deg, #faf9fc 0%, #ffffff 55%, #f6f4fa 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.minority-stress {
+  max-width: min(72rem, 100%);
+  margin: 0 auto;
+}
+
+.minority-stress__intro {
+  max-width: 44rem;
+  margin: 0 auto clamp(1.75rem, 3.5vw, 2.35rem);
+  text-align: center;
+}
+
+.minority-stress__tag {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #134066;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(var(--hero-btn-inner), var(--hero-btn-inner)),
+    var(--rainbow-gradient);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+main > .section h2.minority-stress__title {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.65rem);
+  font-weight: 600;
+  color: var(--color-heading);
+  line-height: 1.18;
+}
+
+.minority-stress__title-sub {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 0.85rem + 0.35vw, 1.15rem);
+  font-weight: 500;
+  font-style: italic;
+  color: rgba(26, 26, 26, 0.55);
+  letter-spacing: 0.01em;
+}
+
+.minority-stress__lead {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: rgba(26, 26, 26, 0.78);
+}
+
+.minority-stress__pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.85rem, 2vw, 1.15rem);
+  margin: 0 0 clamp(2rem, 4vw, 2.75rem);
+}
+
+.minority-stress__pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 1.15rem 1.2rem 1.25rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#e8f4fc, #e8f4fc),
+    var(--rainbow-gradient);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 8px 28px rgba(30, 90, 140, 0.1);
+}
+
+.minority-stress__pillar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.65rem;
+  background: #ffffff;
+  color: #1e5a8a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.minority-stress__pillar-icon svg {
+  display: block;
+}
+
+main > .section h3.minority-stress__pillar-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 0.95rem + 0.35vw, 1.25rem);
+  font-weight: 600;
+  color: var(--color-heading);
+  line-height: 1.2;
+}
+
+.minority-stress__pillar-text {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(26, 26, 26, 0.76);
+}
+
+.minority-stress__avoid {
+  margin: 0 0 clamp(2rem, 4vw, 2.75rem);
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.minority-stress__avoid-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+  margin: 0;
+  padding: clamp(1.25rem, 3vw, 1.65rem) clamp(1.2rem, 2.5vw, 1.5rem);
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 32px rgba(25, 20, 55, 0.06);
+}
+
+.minority-stress__avoid-text {
+  min-width: 0;
+}
+
+.minority-stress__avoid-figure {
+  margin: 0;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(25, 20, 55, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #faf9fc;
+}
+
+.minority-stress__avoid-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.minority-stress__avoid-caption {
+  margin: 0;
+  padding: 0.55rem 0.75rem 0.65rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: rgba(26, 26, 26, 0.62);
+  text-align: center;
+  background: #f3f1f7;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+main > .section h3.minority-stress__avoid-title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 1rem + 0.45vw, 1.4rem);
+  font-weight: 600;
+  color: var(--color-heading);
+  line-height: 1.22;
+}
+
+.minority-stress__avoid-lead {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(26, 26, 26, 0.72);
+}
+
+.minority-stress__avoid-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(26, 26, 26, 0.85);
+}
+
+.minority-stress__avoid-list li {
+  margin-bottom: 0.45rem;
+}
+
+.minority-stress__avoid-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 52rem) {
+  .minority-stress__pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .minority-stress__avoid-content {
+    grid-template-columns: 1fr;
+  }
+
+  .minority-stress__avoid-figure {
+    order: 2;
+    max-width: min(40rem, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 52.01rem) {
+  .minority-stress__avoid-figure {
+    position: sticky;
+    top: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .minority-stress__pillar,
+  .minority-stress__avoid-content {
+    transition: none;
+  }
+}
+
+html.theme-high-contrast .minority-stress__tag {
+  background: #000000;
+  color: #ffff00;
+  border: 2px solid #ffff00;
+  background-image: none;
+  box-shadow: none;
+}
+
+html.theme-high-contrast main > .section h2.minority-stress__title {
+  color: #ffff00;
+}
+
+html.theme-high-contrast .minority-stress__title-sub {
+  color: #ffffff;
+}
+
+html.theme-high-contrast .minority-stress__lead,
+html.theme-high-contrast .minority-stress__avoid-lead,
+html.theme-high-contrast .minority-stress__pillar-text,
+html.theme-high-contrast .minority-stress__avoid-list {
+  color: #ffffff;
+}
+
+html.theme-high-contrast .minority-stress__pillar {
+  background-image: none;
+  background: #000000;
+  border: 2px solid #ffff00;
+  box-shadow: none;
+}
+
+html.theme-high-contrast .minority-stress__pillar-icon {
+  background: #000000;
+  color: #ffff00;
+  border: 1px solid #ffff00;
+}
+
+html.theme-high-contrast main > .section h3.minority-stress__pillar-title,
+html.theme-high-contrast main > .section h3.minority-stress__avoid-title {
+  color: #ffff00;
+}
+
+html.theme-high-contrast .minority-stress__avoid-content {
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+html.theme-high-contrast .minority-stress__avoid-figure {
+  border: 2px solid #ffffff;
+  box-shadow: none;
+  background: #000000;
+}
+
+html.theme-high-contrast .minority-stress__avoid-caption {
+  background: #000000;
+  color: #ffffff;
+  border-top-color: #ffff00;
+}
+
+html.theme-high-contrast main > .section.section--minority-stress {
+  background: #000000;
+  border-bottom-color: #ffffff;
+}
+
+html.theme-dark main > .section.section--minority-stress {
+  background: linear-gradient(180deg, #18181f 0%, #14141a 52%, #18181f 100%);
+  border-bottom-color: var(--color-border);
+}
+
+html.theme-dark .minority-stress__title-sub {
+  color: rgba(228, 228, 236, 0.5);
+}
+
+html.theme-dark .minority-stress__lead,
+html.theme-dark .minority-stress__avoid-lead,
+html.theme-dark .minority-stress__pillar-text,
+html.theme-dark .minority-stress__avoid-list {
+  color: rgba(228, 228, 236, 0.76);
+}
+
+html.theme-dark .minority-stress__pillar {
+  background-image:
+    linear-gradient(#1e2a38, #1e2a38),
+    var(--rainbow-gradient);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  border-color: transparent;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+html.theme-dark .minority-stress__pillar-icon {
+  background: #141820;
+  color: #8ab4f8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+html.theme-dark .minority-stress__avoid-content {
+  background: #1a1a22;
+  border-color: var(--color-border);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+}
+
+html.theme-dark .minority-stress__avoid-figure {
+  border-color: var(--color-border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  background: #14141c;
+}
+
+html.theme-dark .minority-stress__avoid-caption {
+  background: #14141c;
+  color: rgba(228, 228, 236, 0.65);
+  border-top-color: var(--color-border);
+}
+
+/* --- Vídeos: estresse de minorias (carrossel horizontal, após filmes no bloco REATRANS) --- */
+.stress-videos {
+  margin: 0;
+  padding: clamp(2.25rem, 4.5vw, 3.5rem) clamp(1rem, 3vw, 2rem) clamp(3rem, 6vw, 4.75rem);
+  background: #0c0c0e;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  scroll-margin-top: max(6rem, calc(env(safe-area-inset-top, 0px) + 5.25rem));
+}
+
+.stress-videos__intro {
+  max-width: min(42rem, 100%);
+  margin: 0 auto clamp(1.35rem, 3vw, 1.85rem);
+  text-align: center;
+}
+
+.stress-videos__tag {
+  display: inline-block;
+  margin: 0 0 1.05rem;
+  padding: 0.42rem 0.95rem;
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #134066;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(var(--hero-btn-inner), var(--hero-btn-inner)),
+    var(--rainbow-gradient);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.stress-videos__title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 1.15rem + 1.85vw, 2.35rem);
+  font-weight: 600;
+  line-height: 1.18;
+  color: #f8f6ff;
+}
+
+.stress-videos__title-em {
+  font-style: italic;
+  color: #e8d9ff;
+}
+
+.stress-videos__subtitle {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: clamp(0.92rem, 0.86rem + 0.2vw, 1.02rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.stress-videos__hint {
+  margin: 0 auto 1rem;
+  max-width: 36rem;
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.stress-videos__carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(0.35rem, 1.5vw, 0.75rem);
+  margin: 0 calc(-1 * clamp(0.35rem, 1.2vw, 0.85rem));
+  padding: 0 clamp(0.15rem, 0.6vw, 0.35rem);
+}
+
+.stress-videos__arrow {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.85rem;
+  height: 2.85rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #1a1a1a;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(var(--hero-btn-inner), var(--hero-btn-inner)),
+    var(--rainbow-gradient);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+.stress-videos__arrow:hover:not(:disabled) {
+  filter: brightness(1.05);
+}
+
+.stress-videos__arrow:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.stress-videos__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  filter: grayscale(0.4);
+}
+
+.stress-videos__arrow:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.stress-videos__arrow-icon {
+  display: block;
+}
+
+.stress-videos__viewport {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0.35rem clamp(0.25rem, 0.8vw, 0.5rem) 0.85rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: clamp(0.25rem, 0.8vw, 0.5rem);
+  -webkit-overflow-scrolling: touch;
+}
+
+.stress-videos__viewport:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 0.25rem;
+  border-radius: 0.35rem;
+}
+
+.stress-videos__track {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(0.85rem, 2vw, 1.25rem);
+  width: max-content;
+  min-height: 0;
+}
+
+.stress-videos__slide {
+  flex: 0 0 min(88vw, 28rem);
+  width: min(88vw, 28rem);
+  scroll-snap-align: start;
+}
+
+.stress-videos__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: #050508;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.stress-videos__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 48rem) {
+  .stress-videos__carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .stress-videos__viewport {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-inline: 0;
+  }
+
+  .stress-videos__track {
+    display: contents;
+  }
+
+  .stress-videos__slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .stress-videos__arrow--prev {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .stress-videos__arrow--next {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .stress-videos__viewport {
+    scroll-behavior: auto;
+  }
+}
+
+html.theme-high-contrast .stress-videos {
+  background: #000000;
+  border-top-color: #ffffff;
+}
+
+html.theme-high-contrast .stress-videos__tag {
+  background: #ffff00;
+  color: #000000;
+  border: 2px solid #ffffff;
+  background-image: none;
+  box-shadow: none;
+}
+
+html.theme-high-contrast .stress-videos__title {
+  color: #ffff00;
+}
+
+html.theme-high-contrast .stress-videos__title-em {
+  color: #ffffff;
+}
+
+html.theme-high-contrast .stress-videos__subtitle,
+html.theme-high-contrast .stress-videos__hint {
+  color: #ffffff;
+}
+
+html.theme-high-contrast .stress-videos__frame {
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+html.theme-high-contrast .stress-videos__arrow {
+  background: #ffff00;
+  color: #000000;
+  border: 2px solid #ffffff;
+  background-image: none;
+  box-shadow: none;
+}
+
+html.theme-high-contrast .stress-videos__arrow:disabled {
+  opacity: 0.45;
+  filter: none;
+}
+
+html.theme-dark .stress-videos__arrow {
+  color: #141414;
+  background-image:
+    linear-gradient(#ececf2, #ececf2),
+    var(--rainbow-gradient);
 }
 
 /* --- Direitos: grade tipo certificações (ícone + texto, 4 × 2 no desktop) --- */
