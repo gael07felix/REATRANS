@@ -28,8 +28,8 @@
   );
   /* Botões da hero: miolo branco + borda em --rainbow-gradient */
   --hero-btn-inner: #ffffff;
-  /* Sobreposição sobre o vídeo da hero (transparente = sem escurecimento) */
-  --hero-overlay: transparent;
+  /* Sobreposição escura sobre o vídeo da hero (melhora leitura do título e CTAs) */
+  --hero-overlay: linear-gradient(180deg, rgba(10, 14, 28, 0.42) 0%, rgba(6, 10, 22, 0.68) 100%);
 }
 
 /* Alto contraste: ativado por classe no html (JS) */
@@ -704,6 +704,11 @@ html.theme-dark .hero__logo-img--dark {
   background-size: 100% 2px;
 }
 
+/* Só no menu drawer mobile (ver @media max-width 52rem) */
+.hero__menu-links .hero__menu-link--mobile-only {
+  display: none;
+}
+
 .hero__pill-cta {
   padding: 0.48rem 1.05rem;
   border-radius: 999px;
@@ -1088,6 +1093,10 @@ html.theme-dark .theme-toggle__icon--sun {
 
   .hero__header-cluster.is-menu-open .hero__menu-links {
     transform: translateX(0);
+  }
+
+  .hero__menu-links .hero__menu-link--mobile-only {
+    display: block;
   }
 
   .hero__menu-links a:link,
@@ -4268,7 +4277,7 @@ html.theme-dark {
   --color-accent: #c9b6ff;
   --color-border: #353545;
   --color-toolbar-bg: #1a1a24;
-  --hero-overlay: transparent;
+  --hero-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.62) 100%);
   --hero-btn-inner: #ececf2;
 }
 
