@@ -28,8 +28,8 @@
   );
   /* Botões da hero: miolo branco + borda em --rainbow-gradient */
   --hero-btn-inner: #ffffff;
-  /* Sobreposição escura sobre o vídeo (miolo da hero) */
-  --hero-overlay: rgba(0, 0, 0, 0.48);
+  /* Sobreposição sobre o vídeo da hero (transparente = sem escurecimento) */
+  --hero-overlay: transparent;
 }
 
 /* Alto contraste: ativado por classe no html (JS) */
@@ -3640,7 +3640,7 @@ html.theme-dark {
   --color-accent: #c9b6ff;
   --color-border: #353545;
   --color-toolbar-bg: #1a1a24;
-  --hero-overlay: rgba(0, 0, 0, 0.62);
+  --hero-overlay: transparent;
   --hero-btn-inner: #ececf2;
 }
 
